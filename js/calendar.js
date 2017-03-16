@@ -14,7 +14,8 @@
 		day2=new Date(year,month,moreday),//修正后日期
 		allday=day2.getDate(),//修正后为几号
 		dyrq=moreday-allday,//相减得到本月天数
-		day3=new Date(year,month,1),//日期为本月1号
+	    	//new Date(year,month,0);就可获得本月天数
+	    	day3=new Date(year,month,1),//日期为本月1号
 		benyue1=day3.getDay();//本月1号星期几
 
 		addDay()
